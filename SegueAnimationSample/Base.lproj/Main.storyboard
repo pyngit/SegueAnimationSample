@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SegueAnimationSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kc0-WG-rQy">
+                                <rect key="frame" x="140" y="60" width="320" height="480"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dew-oN-ELc" customClass="CustomButton" customModule="SegueAnimationSample" customModuleProvider="target">
+                                        <rect key="frame" x="100" y="90" width="120" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="JuX-HO-bsk"/>
+                                            <constraint firstAttribute="height" constant="30" id="hXa-bJ-Xk6"/>
+                                        </constraints>
+                                        <state key="normal" title="CoverVertical"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.0" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                <color key="value" red="0.0" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onCoverVerticalBtn" destination="BYZ-38-t0r" eventType="touchUpInside" id="nax-up-YLN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qP-vk-f28" customClass="CustomButton" customModule="SegueAnimationSample" customModuleProvider="target">
+                                        <rect key="frame" x="100" y="200" width="120" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Get-zd-mzu"/>
+                                            <constraint firstAttribute="width" constant="120" id="pS1-Jr-Ibh"/>
+                                        </constraints>
+                                        <state key="normal" title="CrossDissolve"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="1" green="0.49803921568627452" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                <color key="value" red="1" green="0.49803921568627452" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onCrossDissolvetn" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gwp-x2-Sx2"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="下から出現するアニメーション" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYZ-ls-fUk">
+                                        <rect key="frame" x="33" y="20" width="255" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="gMN-3I-o77"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular" misplaced="YES">
+                                            <rect key="frame" x="42" y="20" width="238" height="50"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暗くなって切り替わるアニメーション" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQP-qD-7QU">
+                                        <rect key="frame" x="16" y="130" width="289" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="zAZ-Jq-Wct"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQw-x8-lCx" customClass="CustomButton" customModule="SegueAnimationSample" customModuleProvider="target">
+                                        <rect key="frame" x="100" y="320" width="120" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="faw-Ka-1os"/>
+                                            <constraint firstAttribute="width" constant="120" id="rmD-1h-VVe"/>
+                                        </constraints>
+                                        <state key="normal" title="FlipHorizontal"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onFlipHorizontalBtn" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tc6-CU-tVE"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="回るようなアニメーション" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blr-Av-4Fs">
+                                        <rect key="frame" x="33" y="250" width="255" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="5rf-Sn-a71"/>
+                                            <constraint firstAttribute="height" constant="50" id="fa6-pj-dmz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="5rf-Sn-a71"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular" misplaced="YES">
+                                            <rect key="frame" x="59" y="250" width="204" height="50"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="紙をめくるアニメーション" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vO-kC-L9c">
+                                        <rect key="frame" x="16" y="370" width="289" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="MmK-QV-gt0"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="nW1-Bv-gjC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="nW1-Bv-gjC"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular" misplaced="YES">
+                                            <rect key="frame" x="59" y="370" width="204" height="50"/>
+                                        </variation>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfM-J4-dX8" customClass="CustomButton" customModule="SegueAnimationSample" customModuleProvider="target">
+                                        <rect key="frame" x="100" y="440" width="120" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="9fv-f7-KP5"/>
+                                            <constraint firstAttribute="height" constant="30" id="xSU-Fz-R0l"/>
+                                        </constraints>
+                                        <state key="normal" title="PartialCurl"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                <color key="value" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onPartialCurlBtn" destination="BYZ-38-t0r" eventType="touchUpInside" id="M4G-a0-zru"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="DQw-x8-lCx" firstAttribute="centerX" secondItem="Kc0-WG-rQy" secondAttribute="centerX" id="0ox-a7-WhJ"/>
+                                    <constraint firstAttribute="height" constant="480" id="8P4-J4-liD"/>
+                                    <constraint firstItem="8vO-kC-L9c" firstAttribute="top" secondItem="DQw-x8-lCx" secondAttribute="bottom" constant="20" id="AcP-nq-C4N"/>
+                                    <constraint firstAttribute="width" constant="320" id="C5l-y1-dyE"/>
+                                    <constraint firstItem="DYZ-ls-fUk" firstAttribute="top" secondItem="Kc0-WG-rQy" secondAttribute="top" constant="20" id="CBV-si-ZBa"/>
+                                    <constraint firstItem="blr-Av-4Fs" firstAttribute="centerX" secondItem="Kc0-WG-rQy" secondAttribute="centerX" id="GZG-Ac-ZUY"/>
+                                    <constraint firstItem="PfM-J4-dX8" firstAttribute="top" secondItem="8vO-kC-L9c" secondAttribute="bottom" constant="20" id="JT4-TN-5fx"/>
+                                    <constraint firstItem="qQP-qD-7QU" firstAttribute="top" secondItem="Dew-oN-ELc" secondAttribute="bottom" constant="10" id="MBP-sh-AHU"/>
+                                    <constraint firstItem="DYZ-ls-fUk" firstAttribute="centerX" secondItem="Kc0-WG-rQy" secondAttribute="centerX" id="QGu-2j-hs5"/>
+                                    <constraint firstItem="Dew-oN-ELc" firstAttribute="top" secondItem="DYZ-ls-fUk" secondAttribute="bottom" constant="20" id="Tkc-E2-WDa"/>
+                                    <constraint firstItem="blr-Av-4Fs" firstAttribute="top" secondItem="2qP-vk-f28" secondAttribute="bottom" constant="20" id="aWw-p8-Gjo"/>
+                                    <constraint firstItem="2qP-vk-f28" firstAttribute="top" secondItem="qQP-qD-7QU" secondAttribute="bottom" constant="20" id="ere-p7-2hX"/>
+                                    <constraint firstItem="qQP-qD-7QU" firstAttribute="centerX" secondItem="Kc0-WG-rQy" secondAttribute="centerX" id="fD2-wm-1gM"/>
+                                    <constraint firstItem="8vO-kC-L9c" firstAttribute="centerX" secondItem="Kc0-WG-rQy" secondAttribute="centerX" id="jxg-9P-gFQ"/>
+                                    <constraint firstItem="PfM-J4-dX8" firstAttribute="centerX" secondItem="Kc0-WG-rQy" secondAttribute="centerX" id="oez-7l-9Yy"/>
+                                    <constraint firstItem="DQw-x8-lCx" firstAttribute="top" secondItem="blr-Av-4Fs" secondAttribute="bottom" constant="20" id="r7S-XP-tKp"/>
+                                    <constraint firstItem="2qP-vk-f28" firstAttribute="centerX" secondItem="Kc0-WG-rQy" secondAttribute="centerX" id="uJp-WW-peU"/>
+                                    <constraint firstItem="Dew-oN-ELc" firstAttribute="centerX" secondItem="Kc0-WG-rQy" secondAttribute="centerX" id="w4f-1n-zHn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Kc0-WG-rQy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TJF-b9-QlX"/>
+                            <constraint firstItem="Kc0-WG-rQy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Xzy-sD-hWw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="A5Q-29-aqy" kind="show" identifier="toFlipHorizontal" id="gnt-Rb-ypQ"/>
+                        <segue destination="dhD-wI-v4E" kind="show" identifier="toCoverVertical" id="4rv-bN-By3"/>
+                        <segue destination="NmG-gH-cpn" kind="show" identifier="toCrossDissolve" id="8ZQ-4P-ocI"/>
+                        <segue destination="1f0-FU-cSl" kind="show" identifier="toPartialCurl" id="AZa-Uz-K49"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="177" y="417.75"/>
+        </scene>
+        <!--Flip HorizontalVC-->
+        <scene sceneID="FJd-5w-Odi">
+            <objects>
+                <viewController id="A5Q-29-aqy" customClass="FlipHorizontalVC" customModule="SegueAnimationSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RaU-O0-9SL"/>
+                        <viewControllerLayoutGuide type="bottom" id="HDW-iI-YpI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w5J-1Z-hdS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVL-AK-bLK" customClass="CustomButton" customModule="SegueAnimationSample" customModuleProvider="target">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZZg-YN-34b"/>
+                                    <constraint firstAttribute="width" constant="100" id="krW-xi-Drf"/>
+                                </constraints>
+                                <state key="normal" title="Back"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ZZg-YN-34b"/>
+                                        <exclude reference="krW-xi-Drf"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="ZZg-YN-34b"/>
+                                        <include reference="krW-xi-Drf"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="onBackBtn:" destination="A5Q-29-aqy" eventType="touchUpInside" id="Qtj-6E-Jde"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.90196078431372551" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="JVL-AK-bLK" firstAttribute="centerX" secondItem="w5J-1Z-hdS" secondAttribute="centerX" id="1FX-Mo-BnG"/>
+                            <constraint firstItem="JVL-AK-bLK" firstAttribute="centerY" secondItem="w5J-1Z-hdS" secondAttribute="centerY" id="bai-hD-lVo"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="JVL-AK-bLK"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="1FX-Mo-BnG"/>
+                                <exclude reference="bai-hD-lVo"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="JVL-AK-bLK"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="1FX-Mo-BnG"/>
+                                <include reference="bai-hD-lVo"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WNn-nm-DdM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1119" y="269.25"/>
+        </scene>
+        <!--Partial CurlVC-->
+        <scene sceneID="iUn-Ve-gGV">
+            <objects>
+                <viewController id="1f0-FU-cSl" customClass="PartialCurlVC" customModule="SegueAnimationSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="495-Sk-aeT"/>
+                        <viewControllerLayoutGuide type="bottom" id="HVd-mr-aed"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OhJ-TH-gMB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNI-ph-QD4" customClass="CustomButton" customModule="SegueAnimationSample" customModuleProvider="target">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jwl-p5-Dzc"/>
+                                    <constraint firstAttribute="width" constant="100" id="zAr-Wx-I1F"/>
+                                </constraints>
+                                <state key="normal" title="Back"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="jwl-p5-Dzc"/>
+                                        <exclude reference="zAr-Wx-I1F"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="jwl-p5-Dzc"/>
+                                        <include reference="zAr-Wx-I1F"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="onBackBtn:" destination="1f0-FU-cSl" eventType="touchUpInside" id="MJp-In-Sl8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88589925699300698" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="gNI-ph-QD4" firstAttribute="centerY" secondItem="OhJ-TH-gMB" secondAttribute="centerY" id="EaD-BK-m1X"/>
+                            <constraint firstItem="gNI-ph-QD4" firstAttribute="centerX" secondItem="OhJ-TH-gMB" secondAttribute="centerX" id="iHA-0b-kcB"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="gNI-ph-QD4"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="EaD-BK-m1X"/>
+                                <exclude reference="iHA-0b-kcB"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="gNI-ph-QD4"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="EaD-BK-m1X"/>
+                                <include reference="iHA-0b-kcB"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="13h-Eq-euf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="927" y="924.75"/>
+        </scene>
+        <!--Cover VerticalVC-->
+        <scene sceneID="gpF-Pa-7ZX">
+            <objects>
+                <viewController id="dhD-wI-v4E" customClass="CoverVerticalVC" customModule="SegueAnimationSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PRF-J9-8Rl"/>
+                        <viewControllerLayoutGuide type="bottom" id="hTp-cD-Lje"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H8g-4W-PeH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVL-Kb-ZyA" customClass="CustomButton" customModule="SegueAnimationSample" customModuleProvider="target">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="bvF-OC-mtm"/>
+                                    <constraint firstAttribute="height" constant="30" id="wIj-Mw-bPt"/>
+                                </constraints>
+                                <state key="normal" title="Back"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="0.0" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="bvF-OC-mtm"/>
+                                        <exclude reference="wIj-Mw-bPt"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="bvF-OC-mtm"/>
+                                        <include reference="wIj-Mw-bPt"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="onBackBtn:" destination="dhD-wI-v4E" eventType="touchUpInside" id="Bpr-lq-8ZP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78431372549019607" green="1" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="KVL-Kb-ZyA" firstAttribute="centerX" secondItem="H8g-4W-PeH" secondAttribute="centerX" id="fPw-ol-jiZ"/>
+                            <constraint firstItem="KVL-Kb-ZyA" firstAttribute="centerY" secondItem="H8g-4W-PeH" secondAttribute="centerY" id="jwX-Vi-pVA"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="KVL-Kb-ZyA"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="fPw-ol-jiZ"/>
+                                <exclude reference="jwX-Vi-pVA"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="KVL-Kb-ZyA"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="fPw-ol-jiZ"/>
+                                <include reference="jwX-Vi-pVA"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U1E-I1-TLS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="249" y="-466.5"/>
+        </scene>
+        <!--Cross DissolveVC-->
+        <scene sceneID="w8x-Xs-Lxw">
+            <objects>
+                <viewController id="NmG-gH-cpn" customClass="CrossDissolveVC" customModule="SegueAnimationSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lff-b1-Wv1"/>
+                        <viewControllerLayoutGuide type="bottom" id="VLk-ly-B4c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uak-Wx-RjM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMO-1Z-Hde" customClass="CustomButton" customModule="SegueAnimationSample" customModuleProvider="target">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="K0y-Bl-rnx"/>
+                                    <constraint firstAttribute="height" constant="30" id="ZLe-Bo-B7D"/>
+                                </constraints>
+                                <state key="normal" title="Back"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="0.49803921568627452" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="1" green="0.49803921568627452" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="K0y-Bl-rnx"/>
+                                        <exclude reference="ZLe-Bo-B7D"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="K0y-Bl-rnx"/>
+                                        <include reference="ZLe-Bo-B7D"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="onBackBtn:" destination="NmG-gH-cpn" eventType="touchUpInside" id="v8x-ju-Vxq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.90196078431372551" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="kMO-1Z-Hde" firstAttribute="centerY" secondItem="uak-Wx-RjM" secondAttribute="centerY" id="jOS-tb-qc2"/>
+                            <constraint firstItem="kMO-1Z-Hde" firstAttribute="centerX" secondItem="uak-Wx-RjM" secondAttribute="centerX" id="rKD-E0-ODq"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="kMO-1Z-Hde"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="jOS-tb-qc2"/>
+                                <exclude reference="rKD-E0-ODq"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="kMO-1Z-Hde"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="jOS-tb-qc2"/>
+                                <include reference="rKD-E0-ODq"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y7e-OT-CJw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1005" y="-466.5"/>
+        </scene>
+    </scenes>
+</document>
